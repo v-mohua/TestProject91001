@@ -1,4 +1,9 @@
 # ASP.NET Core (.NET Framework)
+- task: AzureAppConfiguration@3
+  inputs:
+    azureSubscription: 'AppConfig - Test (9ff5293f-a7c8-44ca-a035-c51d76750bc7)'
+    ConfigstoreName: 'AppConfigPullStroes'
+    KeyFilter: '*'
 # Build and test ASP.NET Core projects targeting the full .NET Framework.
 # Add steps that publish symbols, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
